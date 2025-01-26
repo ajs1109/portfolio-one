@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import { FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
-import {logo} from "../../assets/index"
-import { navLinksdata } from '../../constants';
+import { logo } from "../../assets/index";
+import { navLinksdata } from "../../constants";
 
 const Navbar = () => {
-  const [showMenu, setShowMenu]=useState(false)
+  const [showMenu, setShowMenu] = useState(false);
   return (
     <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
       <div>
@@ -45,9 +45,9 @@ const Navbar = () => {
               <div>
                 <img className="w-32" src={logo} alt="logo" />
                 <p className="text-sm text-gray-400 mt-2">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Earum soluta perspiciatis molestias enim cum repellat, magnam
-                  exercitationem distinctio aliquid nam.
+                  Passionate full-stack developer with expertise in MERN,
+                  ASP.NET, and NextJS, and committed to crafting efficient and
+                  user-friendly solutions.
                 </p>
               </div>
               <ul className="flex flex-col gap-4">
@@ -75,22 +75,25 @@ const Navbar = () => {
                   Find me in
                 </h2>
                 <div className="flex gap-4">
-                          <a href="https://instagram.com/ajitesh.sri" target="blank">
-                            <span className="bannerIcon">
-                              <FaInstagram />
-                            </span>
-                          </a>
-                          <a href="https://x.com/Ajitesh75169824" target="blank">
-                            <span className="bannerIcon">
-                              <FaTwitter />
-                            </span>
-                          </a>
-                          <a href="https://linkedin.com/in/its-ajitesh-srivastava" target="blank">
-                            <span className="bannerIcon">
-                              <FaLinkedinIn />
-                            </span>
-                          </a>
-                        </div>
+                  <a href="https://instagram.com/ajitesh.sri" target="blank">
+                    <span className="bannerIcon">
+                      <FaInstagram />
+                    </span>
+                  </a>
+                  <a href="https://x.com/Ajitesh75169824" target="blank">
+                    <span className="bannerIcon">
+                      <FaTwitter />
+                    </span>
+                  </a>
+                  <a
+                    href="https://linkedin.com/in/its-ajitesh-srivastava"
+                    target="blank"
+                  >
+                    <span className="bannerIcon">
+                      <FaLinkedinIn />
+                    </span>
+                  </a>
+                </div>
               </div>
               <span
                 onClick={() => setShowMenu(false)}
@@ -104,6 +107,6 @@ const Navbar = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Navbar
+export default Navbar;
